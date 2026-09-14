@@ -285,7 +285,7 @@
   </style>
 </head>
 <body>
-  <!-- i knew you'd look here dumb guyyyyyy -->
+  <!-- get outta inspect and go type BATMAN while ur on the page -->
   <main>
     <section class="screen intro" id="intro">
       <div class="intro-inner">
@@ -498,6 +498,26 @@ Im so excited for all the memories we still have ahead of us Insha’Allah
       advanceEnvelope();
     }
   });
+let batmanCode = "";
+
+document.addEventListener("keydown", function (event) {
+  batmanCode += event.key.toLowerCase();
+  batmanCode = batmanCode.slice(-6);
+
+  if (batmanCode === "batman") {
+    window.open(
+      "https://x.com/tagyourwho/status/2097758128607543528",
+      "_blank",
+      "noopener,noreferrer"
+    );
+
+    batmanCode = "";
+  }
+});
+
+
+
+   
 </script>
 </body>
 </html>
